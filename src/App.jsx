@@ -10,11 +10,15 @@ import Publications from "./pages/Publications";
 import Gallery from "./pages/Gallery";
 import GameZone from "./pages/GameZone";
 import Contact from "./pages/Contact";
+import AnalyticsTracker from "./AnalyticsTracker";
+
 
 export default function App() {
   return (
     <Layout>
       <Routes>
+        <AnalyticsTracker />
+
         <Route path="/" element={<Home />} />
         <Route path="/education" element={<Education />} />
         <Route path="/experience" element={<Experience />} />
